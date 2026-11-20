@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfolio | Fynna Montaño</title>
+<meta name="description" content="Marketing portfolio: social media graphics, e-commerce banners, email campaigns, automation flows, landing pages, strategy proposals and reports.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Portfolio | Fynna Montaño">
+<meta property="og:description" content="Marketing portfolio: social media graphics, e-commerce banners, email campaigns, automation flows, landing pages, strategy proposals and reports.">
+<meta property="og:image" content="images/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1e4938">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%231e4938%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-family=%27Arial,sans-serif%27 font-size=%2728%27 font-weight=%27700%27 fill=%27white%27 text-anchor=%27middle%27%3EFM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="portfolio">
+<main id="main">
+<div class="banner"><div class="wrap"><div class="kicker">Portfolio</div><h1>Creative and campaign work</h1><p>Filter by type and click any piece to see it larger. Client details are kept private.</p></div></div><section><div class="wrap"><div class="filters" id="filters"></div><div class="work" id="grid"></div></div></section>
+
+<section class="alt"><div class="wrap"><div class="section-head"><div><div class="kicker">Email marketing · Real estate</div><h2>Campaigns designed to move a property enquiry forward.</h2></div><p>Selected real estate email creative from my campaign work. Each preview opens the corresponding live campaign when available.</p></div><div class="email-gallery" id="real-estate-emails"></div><p class="muted" style="font-size:12px;margin-top:16px">Creative previews are shown for portfolio purposes. Campaign links open the public email archive.</p></div></section>
+<section><div class="wrap"><div class="section-head"><div><div class="kicker">Websites & landing pages</div><h2>Digital experiences I have helped build.</h2></div><p>From e-commerce storefronts to B2B and real estate lead-generation pages.</p></div><div class="project-grid" id="website-projects"></div></div></section>
+<div id="cta"></div>
+</main>
+<script src="data/site.js"></script>
+<script src="data/services.js"></script>
+<script src="data/experience.js"></script>
+<script src="data/portfolio.js"></script>
+<script src="data/cases.js"></script>
+<script src="data/testimonials.js"></script>
+<script src="js/main.js"></script>
+<noscript><p style="padding:24px;text-align:center">Please enable JavaScript to view this site. Contact: fynnamontano@gmail.com</p></noscript>
+<script>
+(function(){var emails=[
+['The Ritz-Carlton Residences · Al Maryah Island','https://mailchi.mp/springluxefrontier/p1327_the_ritz_carlton_residences_al_maryah_island_261119_09'],
+['Radisson Residences · Al Reem Island','https://mailchi.mp/springluxefrontier/p1359_radisson_residences_al_reem_island_261119_01'],
+['Yas Riva · Arabic campaign','https://mailchi.mp/springluxefrontier/p1004_yas_riva_261118_11_arabic'],
+['Waterfront by Missoni','https://mailchi.mp/springluxefrontier/p1325_waterfront_by_missoni_261118_08'],
+['Marafid · Al Reem','https://mailchi.mp/springluxefrontier/p1019_marafid_al_reem_261117_08'],
+['Samana Collecta','https://mailchi.mp/emiratesrealtygroup/p1346_samana_collecta_261119_04'],
+['Hayat by Dubai South','https://mailchi.mp/emiratesrealtygroup/p1317_hayat_by_dubai_south_261118_01'],
+['Palm Springs by Nakheel','https://mailchi.mp/emiratesrealtygroup/p1342_palm_springs_by_nakheel_261117_06'],
+['Aldar · Upcoming villas','https://mailchi.mp/emiratesrealtygroup/aed-50k-to-book-aldars-upcoming-villas'],
+['Samana Downtown','https://mailchi.mp/emiratesrealtygroup/p1331_samana_downtown_1_261116_04']
+];var names=['JW Marriott branded residences','Waterfront living','Branded home collection','Palm Springs by Nakheel','Marriott waterfront residences','Ready apartments','Waterfront residence offer','Dubai waterfront homes','Real estate campaign creative','Premium residence campaign'];var eg=document.getElementById('real-estate-emails');if(eg)eg.innerHTML=emails.map(function(e,i){return '<article class="email-card"><a href="'+e[1]+'" target="_blank" rel="noopener"><img loading="lazy" src="images/work/real-estate-edm/email-'+String(i+1).padStart(2,'0')+'.webp" alt="'+e[0]+' email design"></a><div class="email-info"><strong>'+e[0]+'</strong><a href="'+e[1]+'" target="_blank" rel="noopener">View live email ↗</a></div></article>'}).join('');
+var projects=[['Speakvest','B2B real estate education website','https://www.speakvest.vercel.app/'],['Quatro Philippines','E-commerce storefront · product catalogue','https://quatroph.com/'],['Palm Springs by Nakheel','Real estate landing page','https://projects.dubaipremiumedge.com/palm-springs-by-nakheel/'],['Hayat by Dubai South','Real estate lead-generation page','https://projects.dubaipremiumedge.com/hayat-by-dubai-south/'],['Canopies Sanctuary · Yas Point','Property campaign landing page','https://projects.dxbdevelopment.com/canopies-sanctuary-yas-point/'],['Sorrento Lagoon Views','Property campaign landing page','https://projects.dxbdevelopment.com/sorrento-lagoon-views/'],['Waterfront by Missoni','Property campaign landing page','https://projects.dxbdevelopment.com/waterfront-by-missoni/']];var pg=document.getElementById('website-projects');if(pg)pg.innerHTML=projects.map(function(p,i){return '<article class="project-card"><div class="project-art">'+p[0]+'</div><div class="project-copy"><span class="kicker">'+(i<2?'Website':'Landing page')+'</span><h3>'+p[0]+'</h3><p>'+p[1]+'</p><a href="'+p[2]+'" target="_blank" rel="noopener">Visit live website ↗</a></div></article>'}).join('');})();
+</script></body>
+</html>
